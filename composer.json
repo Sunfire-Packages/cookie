@@ -1,0 +1,40 @@
+{
+  "name": "sunfire/cookie",
+  "description": "Make your Laravel app comply with the crazy EU cookie law",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "sunfire",
+    "cookie-consent",
+    "cookie",
+    "comply",
+    "law",
+    "eu"
+  ],
+  "authors": [
+    {
+      "name": "Michael Brauner",
+      "email": "michaelbrauner82@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/support": "^6.0|^7.0|^8.0",
+    "illuminate/view": "^6.0|^7.0|^8.0",
+    "illuminate/cookie": "^6.0|^7.0|^8.0",
+    "ext-json": "*"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Sunfire\\Cookie\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sunfire\\Cookie\\SunfireCookieServiceProvider"
+      ]
+    }
+  }
+}
